@@ -1,0 +1,13 @@
+{
+  "type": "postgres",
+  "host": "localhost",
+  "port": 5432,
+  "username": "postgres",
+  "password": "admin",
+  "database": "myappform",
+  "entities": ["./src/modules/users/infra/typeorm/entities/*.ts"],
+  "migrations": ["./src/modules/users/infra/typeorm/migrations/**.ts"],
+  "cli": {
+    "migrationsDir": "./src/modules/users/infra/typeorm/migrations"
+  }
+}
